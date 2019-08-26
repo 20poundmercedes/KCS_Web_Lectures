@@ -1,3 +1,31 @@
 body {
+    background-color: cornflowerblue;
+}
+#grid{
+    display:grid;
+    grid-template-areas:
+    'A A A'
+    'B C D'
+    'E E E'
+    ;
+}
+.grid_item_1{
+    grid-area: A;
+    background-color:green;
+}
+.grid_item_2{
+    grid-area: B;
     background-color: blue;
+}
+.grid_item_3{
+    grid-area: C;
+    background-color: aqua;
+}
+.grid_item_4{
+    grid-area: D;
+    background-color: darkgoldenrod;
+}
+.grid_item_5{
+    grid-area: E;
+    background-color: firebrick;
 }
