@@ -1,5 +1,5 @@
 body {
-    background-color: cornflowerblue;
+    background-color: whitesmoke;
 }
 #grid{
     display:grid;
@@ -11,21 +11,47 @@ body {
 }
 .grid_item_1{
     grid-area: A;
-    background-color:green;
+    background-color:palegreen;
 }
 .grid_item_2{
     grid-area: B;
-    background-color: blue;
+    background-color: cornflowerblue;
 }
 .grid_item_3{
     grid-area: C;
-    background-color: aqua;
+    background-color: darkgrey;
 }
 .grid_item_4{
     grid-area: D;
-    background-color: darkgoldenrod;
+    background-color: dimgray;
 }
 .grid_item_5{
     grid-area: E;
-    background-color: firebrick;
+    background-color: palegoldenrod;
+}
+
+@keyframes changing-colors {
+    from {background-color: cornflowerblue;}
+    to {background-color:saddlebrown;}
+}
+
+div {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: changing-colors;
+    animation-duration: 4s;
+}
+
+@keyframes letter-colors {
+    from {color: moccasin}
+    to {color:black}
+}
+
+div  {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: letter-colors;
+    animation-duration: 4s;
 }
