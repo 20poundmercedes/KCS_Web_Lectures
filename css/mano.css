@@ -29,29 +29,3 @@ body {
     grid-area: E;
     background-color: palegoldenrod;
 }
-
-@keyframes changing-colors {
-    from {background-color: cornflowerblue;}
-    to {background-color:saddlebrown;}
-}
-
-div {
-    width: 100px;
-    height: 100px;
-    background-color: red;
-    animation-name: changing-colors;
-    animation-duration: 4s;
-}
-
-@keyframes letter-colors {
-    from {color: moccasin}
-    to {color:black}
-}
-
-div  {
-    width: 100px;
-    height: 100px;
-    background-color: red;
-    animation-name: letter-colors;
-    animation-duration: 4s;
-}
