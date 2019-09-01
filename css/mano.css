@@ -1,82 +1,54 @@
+body {
+    background-color: darkgrey;
+}
 #grid{
-    display: grid;
+    display:grid;
     grid-template-areas:
-            'h1 h2 h3'
-            'sl main sr'
-            'fl fl fr';
+    'icon Top admin'
+    'skills main work'
+    'E E E';
     grid-template-columns: 250px auto 250px;
     grid-column-gap: 1em;
     grid-row-gap: 1em;
 }
-.gridItem1 {
-    grid-area: h1;
+.gridItem1{
+    grid-area: icon;
 }
 .gridItem2 {
-    grid-area: h2;
-    display:flex;
+    grid-area: Top;
     justify-content:center;
     align-items:center;
-    padding-top: 20px;
+    padding-top: 50px;
 }
 .gridItem3 {
-    grid-area: h3;
-    display:flex;
-    justify-content:flex-end;
-    align-items:center;
-    padding-right: 50px;
+    grid-area: admin;
+    text-align:center;
+    margin: 35px 50px 50px 50px;
 }
-.gridItem4 {
-    grid-area: sl;
+.griditem4{
+    grid-area: skills;
 }
-.gridItem5 {
+.griditem5{
     grid-area: main;
+    font-size: 10px;
 }
-.gridItem6 {
-    grid-area: sr;
+.griditem6 img{
+    width: 50px;
+    height: 50px;
 }
-.gridItem7 {
-    grid-area: fl;
-}
-.gridItem8 {
-    grid-area: fr;
-}
-
-.gridItem2 a {
-    font-size: 36px;
-    padding: 10px;
-    margin: 0 3px;
-    border-right: 2px solid darkgray;
-}
-.gridItem2 a:last-child {
-    border-right:none;
+.griditem7{
+    grid-area: E;
 }
 
 .skills {
-    padding: 0 0 20px 15px;
-    font-size: 18px;
+    padding: 0 0 0 5px;
+    font-size: 10px;
 }
 .skill {
-    padding-bottom: 10px;
+    padding-bottom: 3px;
 }
 .skillProgress {
     width: 100%;
-    height: 20px;
+    height: 10px;
     background-color: antiquewhite;
-}
-
-.gridItem6 {
-    text-align: center;
-}
-.gridItem6 h3{
-    padding-bottom: 5px;
-    border-bottom: 2px dashed black;
-    margin-bottom: 5px;
-}
-.gridItem6 img {
-    width: 230px;
-}
-
-.gridItem7, .gridItem8 {
-    background-color: darkgray;
-    grid-column-gap: 0;
 }
