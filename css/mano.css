@@ -16,36 +16,40 @@ body {
 }
 .gridItem2 {
     grid-area: Top;
-    justify-content:center;
-    align-items:center;
-    padding-top: 50px;
+    align-items: center;
+    text-align: center;
+    margin: 25px 50px 50px 50px;
+    font-size: 32px;
 }
 .gridItem3 {
     grid-area: admin;
+    position: relative;
     text-align:center;
-    margin: 35px 50px 50px 50px;
+    margin: 25px 50px 50px 50px;
+    font-size: 32px;
 }
-.griditem4{
+.gridItem4{
     grid-area: skills;
 }
-.griditem5{
+.gridItem5{
     grid-area: main;
     font-size: 10px;
 }
-.griditem6 img{
-    width: 50px;
-    height: 50px;
+.gridItem6 img{
+    width: 50%;
+    height: 30%;
+    padding-bottom: 10px;
 }
-.griditem7{
+.gridItem6 small{
+    text-align:center;
+    position:relative;
+}
+.gridItem7{
     grid-area: E;
 }
 
 .skills {
-    padding: 0 0 0 5px;
     font-size: 10px;
-}
-.skill {
-    padding-bottom: 3px;
 }
 .skillProgress {
     width: 100%;
