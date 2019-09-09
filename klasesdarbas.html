@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Assignment</h1>
+<p id="demo"></p>
+<script>
+    let a=-5;
+    let b=0;
+    let c=-4;
+    let d=4;
+    if (c<b) {
+        if (c<a){
+            document.getElementById('demo').innerHTML='a turi buti mazesnis uz c ';
+        } else {
+            if (c<d) {
+                document.getElementById('demo').innerHTML='Susikerta = [ '+c.toString()+'; '+d.toString()+' ]';
+            } else {
+                document.getElementById('demo').innerHTML='Susikerta = [ '+c.toString()+'; '+b.toString()+' ]';
+            }
+        }
+    } else if (b===c){
+        document.getElementById('demo').innerHTML='Susikerta = '+b.toString();
+    } else {
+        document.getElementById('demo').innerHTML='Negali susikirsti';
+    }
+</script>
+<p>kita uzduotis 1:15</p>
+<p id="demo1"></p>
+<script src="js/uzduotis15.js"></script>
+</body>
+</html>

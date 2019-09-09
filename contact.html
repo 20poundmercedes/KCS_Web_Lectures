@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Puslapio pavadinimas</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=5">
+    <link rel="stylesheet" href="/css/mano.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+<div id="grid">
+    <div class="gridItem1">
+        <img src="/images/batman%20logo.jpg" alt="logo" width="820" height="547">
+    </div>
+    <div class="gridItem2">
+        <div class=meniu-center>
+            <a class="active" href="index.html">About me</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="contact.html">Contacts</a>
+        </div>
+    </div>
+    <div class="gridItem3">
+        <a class="login">
+            <a href="#login">Admin</a>
+        </a>
+    </div>
+    <div class="gridItem4">
+        <div class="skills">
+            <div class="skill html">HTML
+                <div class="skillProgress"><div class="progr"></div></div>
+            </div>
+        </div>
+        <div class="skill css">CSS
+            <div class="skillProgress"><div class="progr"></div></div>
+        </div>
+        <div class="skill js">JS
+            <div class="skillProgress"><div class="progr"></div></div>
+        </div>
+        <div class="skill php">PHP
+            <div class="skillProgress"><div class="progr"></div></div>
+        </div>
+        <div class="skill sql">SQL
+            <div class="skillProgress"><div class="progr"></div></div>
+        </div>
+    </div>
+    <div class="gridItem5">
+        <main>
+            <br>
+            <label for="fn">Vardas</label>
+            <input name="Firstname" type="text" id="fn">
+            <label for="fn1">Pavarde</label>
+            <input name="lastname" type="text" id="fn1">
+            <br>
+            <label for="fn2">Metai</label>
+            <input name="Year" type="text" id="fn2">
+            <br>
+            <label for="zinute">Tavo zinute man</label>
+            <br>
+            <textarea name="message" rows="10" cols="30" id="zinute"></textarea>
+            <button type="button" onclick="alert(hello_world)">KLAUSK</button>
+            <input value="Siuti" type="submit">
+            <hr>
+            <input type="button" class="btn btn-secondary" value="Sudeti">
+            <input type="button" class="btn btn-secondary" value="Atimti">
+            <input type="button" class="btn btn-secondary" value="Dauginti">
+            <input type="button" class="btn btn-secondary" value="Dalinti">
+            <br>
+            <div id="rez">Atsakymas.: </div>
+        </main>
+    </div>
+    <div class="gridItem6">
+        <h3>Saved cities:</h3>
+        <br><small>Gotham</small>
+        <div class="darbas">
+            <img src="/images/new%20york1.png" alt="miestas1" height="2250" width="1487">
+            <br><small>Metropolis</small>
+        </div>
+        <div class="darbas">
+            <img src="/images/new%20york2.jpeg" alt="miestas2" height="1300" width="867">
+        </div>
+    </div>
+    <div class="gridItem7">
+        <span>Visos teisės saugomos &copy;2019</span>
+    </div>
+    <div class="gridItem8">
+        <span>Sukurta: Dovydo Labučio</span>
+    </div>
+</div>
+<script src="js/skaiciuoti.js"></script>
+</body>
+</html>

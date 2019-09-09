@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>uzduotys</title>
+</head>
+<body>
+
+<h1>Užduotys</h1>
+<p id="demo"></p>
+
+<script>
+   let a=-5;
+   let b=0;
+   let c=-4;
+   let d=4;
+   document.getElementById('demo').innerHTML=a.toString();
+   if (b>c) {
+      if (a>c){
+         document.getElementById('demo').innerHTML='Klaida: kintamasis a turi buti mazesnis uz c ';
+      } else {
+         if (b>d) {
+            document.getElementById('demo').innerHTML='Sankirta = [ '+c.toString()+'; '+d.toString()+' ]';
+         } else {
+            document.getElementById('demo').innerHTML='Sankirta = [ '+c.toString()+'; '+b.toString()+' ]';
+         }
+      }
+   } else if (b===c){
+      document.getElementById('demo').innerHTML='Sankirta = '+b.toString();
+   } else {
+      document.getElementById('demo').innerHTML='Sankirta neegzistuoja';
+   }
+</script>
+
+</body>
+</html>
