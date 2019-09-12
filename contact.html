@@ -5,7 +5,6 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=5">
     <link rel="stylesheet" href="/css/mano.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 <body>
 <div id="grid">
@@ -14,9 +13,9 @@
     </div>
     <div class="gridItem2">
         <div class=meniu-center>
-            <a class="active" href="index.html">About me</a>
-            <a href="portfolio.html">Portfolio</a>
-            <a href="contact.html">Contacts</a>
+            <a class=meniu-center href="index.html">About me</a>
+            <a class=meniu-center href="portfolio.html">Portfolio</a>
+            <a class=meniu-center href="contact.html">Contacts</a>
         </div>
     </div>
     <div class="gridItem3">
@@ -46,10 +45,11 @@
     <div class="gridItem5">
         <main>
             <br>
+            <form class="contact" action="saugotizinute.php" method="post">
             <label for="fn">Vardas</label>
-            <input name="Firstname" type="text" id="fn">
-            <label for="fn1">Pavarde</label>
-            <input name="lastname" type="text" id="fn1">
+            <input name="email" type="text" id="fn">
+            <label for="fn1">email</label>
+            <input name="Email" type="text" id="fn1">
             <br>
             <label for="fn2">Metai</label>
             <input name="Year" type="text" id="fn2">
@@ -57,8 +57,8 @@
             <label for="zinute">Tavo zinute man</label>
             <br>
             <textarea name="message" rows="10" cols="30" id="zinute"></textarea>
-            <button type="button" onclick="alert(hello_world)">KLAUSK</button>
-            <input value="Siuti" type="submit">
+<!--            <button type="button" onclick="alert(hello_world)">KLAUSK</button>-->
+            <input value="send" type="button">
             <hr>
             <input type="button" class="btn btn-secondary" value="Sudeti">
             <input type="button" class="btn btn-secondary" value="Atimti">
@@ -66,6 +66,7 @@
             <input type="button" class="btn btn-secondary" value="Dalinti">
             <br>
             <div id="rez">Atsakymas.: </div>
+            </form>
         </main>
     </div>
     <div class="gridItem6">
@@ -86,6 +87,8 @@
         <span>Sukurta: Dovydo Labučio</span>
     </div>
 </div>
-<script src="js/skaiciuoti.js"></script>
+<!--<script src="js/skaiciuoti.js"></script>-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="js/formsubmit.js"></script>
 </body>
 </html>

@@ -67,3 +67,14 @@ function keistiAtsakyma(Atsakymas) {
         rez.append(span);
     }
 }
+
+let name = $('#fn').val();
+let email = $('#fn1').val();
+let msg = $('#zinute').val();
+function JSON() {
+    JSON = {
+        fn:name,
+        fn1:email,
+        zinute:msg
+    }
+}
